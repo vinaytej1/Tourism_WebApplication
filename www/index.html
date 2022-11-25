@@ -1,0 +1,448 @@
+<!DOCTYPE html>
+<html>
+    <head>
+      
+        <meta charset="utf-8">
+        <meta http-equiv="Content-Security-Policy" content="default-src 'self' data: gap: https://ssl.gstatic.com 'unsafe-eval'; style-src 'self' 'unsafe-inline'; media-src *; img-src 'self' data: content:;">
+        <meta name="format-detection" content="telephone=no">
+        <meta name="msapplication-tap-highlight" content="no">
+        <meta name="viewport" content="initial-scale=1, width=device-width, viewport-fit=cover">
+        <meta name="color-scheme" content="blue">
+        <link rel="manifest" href="/docs/5.0/assets/img/favicons/manifest.json">
+        <link rel="icon" href="img/logo1.png">
+        <link rel="stylesheet" href="css/index.css">
+        <title>Tourism Application</title>
+        <link href="css/bootstrap.min.css" rel="stylesheet" integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
+       <style>
+            
+  .bg {
+  background-image: url("./img/mysore.jpg");
+  height:100%; 
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+* {box-sizing:border-box}
+.site-footer
+{
+  background-color:#37c1e4;
+  padding:45px 0 20px;
+  font-size:20px;
+  line-height:24px;
+  color:#000000;
+}
+.site-footer hr
+{
+  border-top-color:#bbb;
+  opacity:0.5
+}
+.site-footer hr.small
+{
+  margin:20px 0
+}
+.site-footer h6
+{
+  color:#fff;
+  font-size:16px;
+  text-transform:uppercase;
+  margin-top:5px;
+  letter-spacing:2px
+}
+.site-footer a
+{
+  color:#e26f6f;
+}
+.site-footer a:hover
+{
+  color:#3366cc;
+  text-decoration:none;
+}
+.footer-links
+{
+  padding-left:0;
+  list-style:none
+}
+.footer-links li
+{
+  display:block
+}
+.footer-links a
+{
+  color:#737373
+}
+.footer-links a:active,.footer-links a:focus,.footer-links a:hover
+{
+  color:#3366cc;
+  text-decoration:none;
+}
+.footer-links.inline li
+{
+  display:inline-block
+}
+.site-footer .social-icons
+{
+  text-align:right
+}
+.site-footer .social-icons a
+{
+  width:40px;
+  height:40px;
+  line-height:40px;
+  margin-left:6px;
+  margin-right:0;
+  border-radius:100%;
+  background-color:#33353d
+}
+.copyright-text
+{
+  margin:0
+}
+@media (max-width:991px)
+{
+  .site-footer [class^=col-]
+  {
+    margin-bottom:30px
+  }
+}
+@media (max-width:767px)
+{
+  .site-footer
+  {
+    padding-bottom:0
+  }
+  .site-footer .copyright-text,.site-footer .social-icons
+  {
+    text-align:center
+  }
+}
+.social-icons
+{
+  padding-left:0;
+  margin-bottom:0;
+  list-style:none
+}
+.social-icons li
+{
+  display:inline-block;
+  margin-bottom:4px
+}
+.social-icons li.title
+{
+  margin-right:15px;
+  text-transform:uppercase;
+  color:#96a2b2;
+  font-weight:700;
+  font-size:13px
+}
+.social-icons a{
+  background-color:#eceeef;
+  color:#818a91;
+  font-size:16px;
+  display:inline-block;
+  line-height:44px;
+  width:44px;
+  height:44px;
+  text-align:center;
+  margin-right:8px;
+  border-radius:100%;
+  -webkit-transition:all .2s linear;
+  -o-transition:all .2s linear;
+  transition:all .2s linear
+}
+.social-icons a:active,.social-icons a:focus,.social-icons a:hover
+{
+  color:#fff;
+  background-color:#29aafe
+}
+.social-icons.size-sm a
+{
+  line-height:34px;
+  height:34px;
+  width:34px;
+  font-size:14px
+}
+.social-icons a.facebook:hover
+{
+  background-color:#3b5998
+}
+.social-icons a.twitter:hover
+{ 
+  background-color:#00aced
+}
+.social-icons a.linkedin:hover
+{
+  background-color:#007bb6
+}
+.social-icons a.dribbble:hover
+{
+  background-color:#ea4c89
+}
+@media (max-width:767px)
+{
+  .social-icons li.title
+  {
+    display:block;
+    margin-right:0;
+    font-weight:600
+  }
+}
+</style>
+</header>
+<header class="p-3 bg-dark text-white">
+<div class="container">
+    <div class="d-flex flex-wrap align-items-center justify-content-center justify-content-lg-start">
+      <svg xmlns="http://www.w3.org/2000/svg" width="19" height="19" fill="currentColor" class="bi bi-slack" viewBox="0 0 16 16">
+        <path d="M3.362 10.11c0 .926-.756 1.681-1.681 1.681S0 11.036 0 10.111C0 9.186.756 8.43 1.68 8.43h1.682v1.68zm.846 0c0-.924.756-1.68 1.681-1.68s1.681.756 1.681 1.68v4.21c0 .924-.756 1.68-1.68 1.68a1.685 1.685 0 0 1-1.682-1.68v-4.21zM5.89 3.362c-.926 0-1.682-.756-1.682-1.681S4.964 0 5.89 0s1.68.756 1.68 1.68v1.682H5.89zm0 .846c.924 0 1.68.756 1.68 1.681S6.814 7.57 5.89 7.57H1.68C.757 7.57 0 6.814 0 5.89c0-.926.756-1.682 1.68-1.682h4.21zm6.749 1.682c0-.926.755-1.682 1.68-1.682.925 0 1.681.756 1.681 1.681s-.756 1.681-1.68 1.681h-1.681V5.89zm-.848 0c0 .924-.755 1.68-1.68 1.68A1.685 1.685 0 0 1 8.43 5.89V1.68C8.43.757 9.186 0 10.11 0c.926 0 1.681.756 1.681 1.68v4.21zm-1.681 6.748c.926 0 1.682.756 1.682 1.681S11.036 16 10.11 16s-1.681-.756-1.681-1.68v-1.682h1.68zm0-.847c-.924 0-1.68-.755-1.68-1.68 0-.925.756-1.681 1.68-1.681h4.21c.924 0 1.68.756 1.68 1.68 0 .926-.756 1.681-1.68 1.681h-4.21z"/>
+      </svg>
+      <ul class="nav col-12 col-lg-auto me-lg-auto mb-2 justify-content-center mb-md-0">
+        <h4><li style="font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif; font-stretch: expanded;">TOURISM APPLICATION</h4></li></li>
+         </ul>
+         <ul class="navbar-nav ms-auto " >
+          <li class="nav-item dropdown"><a class="nav-link dropdown-toggle active" id="homeDropdownMenuLink" href="index.html" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+            <button type="button" class="btn btn-outline-light me-2">Home</button></a>
+            <div class="dropdown-menu" aria-labelledby="homeDropdownMenuLink"><a class="dropdown-item" href="about.html">About Us</a><a class="dropdown-item" href="signin.html">Subscribe</a></a><a class="dropdown-item" href="privacy.html">Privacy Policy</a><a class="dropdown-item" href="contri.html">Geolocation,Camera</a>
+          </li>
+     
+  </div>
+</header>
+          <link href="carousel.css" rel="stylesheet">
+          </head>
+    <body>
+        <main>
+          <div  class="bg" style="background-image: url('./img/mysore.jpg'); height: 100vh;background-repeat: no-repeat;">
+         <section class="py-5 text-center container">
+              <div class="row py-lg-5">
+                <div class="col-lg-6 col-md-8 mx-auto">
+                  <h1 class="fw-light" style="background-color: darkgoldenrod; font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;"> <b>Karnataka Tourism</b></h1>
+                  <p>
+                    <div data-role="footer" color="blue">
+                      <h1 style="font-family: 'Times New Roman', Times, serif; background-color: skyblue;">ONE STATE MANY WORLDS</h1>
+                      </div></p>
+                      
+                    </div>
+              </div>
+              </div>
+              </div>
+            <div class="album py-5 bg-light">
+              <div class="container">
+          
+                <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 g-3">
+                  <div class="col">
+                    <div class="card shadow-sm">
+                      
+                      <img  src="img/img1.jpg" width="100%"  alt="#">
+                      <b style="background-color:aquamarine;">Murudeshwara</b>
+                      <div class="card-body">
+                        <p class="card-text"><b>Located in Bhatkal taluk in Karnataka, Murudeshwar is known to have the second tallest statue of Lord Shiva The statue is placed in such a way that the back of Shiva is towards the Arabian Sea. Towering at 249 ft, the statue is the tallest structure in the town.</b></p>
+                        <div class="d-flex justify-content-between align-items-center">
+                         <div >
+                          <a href="murdheswaraview.html"class="nav-link px-2 text-black" style="color: #000000;">View More</a>
+                         </div> 
+                         <small class="text-muted"><i> Seek Your Blessings</i></small>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  
+                  <div class="col">
+                    <div class="card shadow-sm">
+                      <img src="img/dharma11.jpg"width="100%">
+                      <b style="background-color: rgb(241, 141, 75);">Dharmasthala</b>
+                      <div class="card-body">
+                        <p class="card-text"><b>Dharmasthala Temple is an 800-year-old major pilgrimage site which hosts 'Lakshadeepa' - a festival of lights that takes place in November - December. Another prime attraction here is the Bahubali statue, carved out of a single stone and 39 ft high. Dharmasthala has natural beauty gifted by its location, and the same is ornamented by the abundant and widespread scents of culture and spirituality in its air</b></p>
+                        <div class="d-flex justify-content-between align-items-center">
+                          <div class="btn-group">
+                            <a href="dharma.html"class="nav-link px-2 text-black" style="color: #020202;">View More</a>
+                          </div>
+                          <small class="text-muted">The land of Charity</small>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col">
+
+                    <div class="card shadow-sm">
+                      <img src="img/kudremukh.jpg"width="100%">
+                      <b style="background-color: rgb(243, 174, 128);">Kudremukh</b>
+                      <div class="card-body">
+                        <p class="card-text"><b>Kudremukh is always popular for its scenic beauty and biodiversity. Being a famous hill-station in the crowd of Bangalore, this place is basically a hill range of Karnataka. With the dense forest, grasslands and the rolling meadows, Kudremukh is a hotspot for biodiversity</b>.</p>
+                        <div class="d-flex justify-content-between align-items-center">
+                          <div class="btn-group">
+                            <a href="kudre.html"class="nav-link px-2 text-black" style="color: #000000;">View More</a>
+                          </div>
+                          <small class="text-muted">A Picture Perfect Place to be Visited</small>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col">
+                    <div class="card shadow-sm">
+                     <img src="img/jog.jpg" width="100%" >
+                      <b style="background-color: rgb(69, 243, 171);">Jog Falls</b>
+                      <div class="card-body">
+                        <p class="card-text"><b>Jog Falls is created by the Sharavati dropping 253 m (830 ft), making it the third-highest waterfall in India after the Nohkalikai Falls with a drop of 335 m (1,099 ft) in Meghalaya and Dudhsagar Waterfalls with a drop of 310 m (1,020 ft) in Goa.</b>.</p>
+                        <div class="d-flex justify-content-between align-items-center">
+                          <div class="btn-group">
+                           <a href="jogfalls.html"class="nav-link px-2 text-black" style="color: #000000;">View More</a>
+                          </div>
+                          <small class="text-muted">The Splash Of Water In Waterfalls</small>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col">
+                    <div class="card shadow-sm">
+                      <img  src="img/hampi.jpg" width="100%"  alt="#">
+                      <b style="background-color: rgb(69, 243, 171);">Hampi</b>
+                      <div class="card-body">
+                        <p class="card-text"><b>The village showcases ruins and historical remnants of Vijayanagara Kingdom. The stony landscape and barren beauty of the town is one of the perfect places to visit in Karnataka. History buffs and architecture scholars flock in thousands of number here annually. Other curious travelers often feel spell-bound and awestruck of the craftsmanship of the skilled artisans of the era. Hampi has almost 500 architectural structure in its ruins, all of which are worth visiting</b>.</p>
+                        <div class="d-flex justify-content-between align-items-center">
+                          <div class="btn-group">
+                            <a href="hampiview.html"class="nav-link px-2 text-black" style="color: #000000;">View More</a>
+                          </div>
+                          <small class="text-muted"> Explore The Ancient City</small>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col">
+                    <div class="card shadow-sm">
+                      <video src="img/ag.mp4" width="90%" controls width="500"></video>
+                      <b style="background-color: rgb(69, 243, 171);">Agumbe</b>
+                      <div class="card-body">
+                        <p class="card-text"><b>Also known as Cherrapunji of South, Agumbe is popular for its scenic beauty. The hill station is home to several rare medicinal plants such as Myristica, Listsaea and is known for rainforest conservation. Far from the hustle-bustle of the cities, it is one of the perfect places if you are looking for a rejuvenating vacation. The major attractions for the tourists here includes visiting Someshwara Wildlife Sanctuary, going trekking, rafting, hiking, and bike-riding.</b>.</p>
+                        <div class="d-flex justify-content-between align-items-center">
+                          <div class="btn-group">
+                            <a href="agumbe1.html"class="nav-link px-2 text-black" style="color: #000000;">View More</a>
+                          </div>
+                          <small class="text-muted">Cherrapunji of South</small>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col">
+                    <div class="card shadow-sm">
+                      
+                      <img  src="img/bandi.jpg" width="100%"  alt="#">
+                      <b style="background-color: aquamarine;">Bandipur National Park</b>
+                      <div class="card-body">
+                        <p class="card-text"><b> When holidaying means greenery and winding trails, when birds chirping and calls of the wild animals are melodies to the ears, when the beauty and the charm of Bandipur National Park leave you awestruck, it means you have had a successful day in your vacation.</b></p>
+                        <div class="d-flex justify-content-between align-items-center">
+                          <div class="btn-group">
+                            <a href="bandi.html"><input type=button value='View More'></a>
+                           
+                          </div>
+                          <small class="text-muted"> Holidaying In The Lap Of Nature</small>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col">
+                    <div class="card shadow-sm">
+                      
+                      <img src="img/sringeri.jpg" width="100%" height="240">
+                      <b style="background-color: rgb(69, 243, 171);">Sringeri</b>
+                      <div class="card-body">
+                        <p class="card-text"> <b>A hill town located in the Chikkamagaluru district, and is the first site of matha that was established by Adi Shankara in the 8th century. It holds a historical significant value and the abode of the Sharadamba of Sringeri.
+                          This ancient hill town is one of the most famous places to see in Karnataka, a hillock which is considered to be the home of the sage Vibhandaka and his son Rishyashringa.</b>.</p>
+                        <div class="d-flex justify-content-between align-items-center">
+                          <div class="btn-group">
+                            <a href="sringeri1.html"><input type=button style="background-color: darksalmon;" value='View More'></a>
+                            
+                          </div>
+                          <small class="text-muted">Marvel At The Ancient Architecture</small>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+          
+                  
+                 
+                  
+                  <div class="col">
+                    <div class="card shadow-sm">
+                      
+                     <img src="img/coorg.png" width="100%"  alt="logo">
+                     <b  style="background-color: aquamarine;" > Coorg </b>
+                     <div class="card-body">
+                        <p class="card-text"><h6><b>Fondly called as the Scotland of India, Coorg is one of the top hill stations in South India and among the most popular attraction not to miss in your Karnataka holiday packages. Coorg (or Kodagu) is about 265 km from Bangalore city and takes about 6 hrs drive.<br>
+                                            </b></h6>
+                                        </p>
+                                        <div class="d-flex justify-content-between align-items-center">
+                                          <div class="btn-group">
+                                            <a href="coorgview.html"><input type=button value='View More'></a>
+                                  <div>
+                                    <small class="text-muted"><i>Get Hypnotized With The Aroma Of Arabica Coffee Beans </i></small>
+                                  </div>          
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>         
+                    </main>
+                    <footer class="site-footer" >
+                      <div class="container" >
+                        <div class="row">
+                          <div class="col-sm-12 col-md-6" >
+                            
+                            <h6>About</h6>
+                            <p class="text-justify"><i> </i>  Karnataka Tourism Karnataka is located in the southwestern region of India. It is a rich state, rich in culture & heritage as well as the diversity of its landscape. Larger than life palaces fascinate you as much as the beaches & hill stations, all of which are an intrinsic part of Karnataka tourism places. <b>We provide information about various tourists place in Karnatka. Explore our Website for more information!!</b></p>
+                          </div>
+                          <div class="col-xs-6 col-md-3">
+                            <h6>Project Team</h6>
+                            <ul class="footer-links" style="color:rgb(24, 16, 16); font-family: monospace;">
+                            <b>  <li>VINAYTEJ VG</li></b>
+                              <li>VINAY N</li>
+                              <li>TEJAS V</li>
+                            </ul>
+                          </div>
+                          <div class="col-xs-6 col-md-3" style="border-style: groove; border-color: greenyellow;">
+                            <h6>Details</h6>
+                            <ul class="footer-links">
+                             
+                              <li>SJCIT COLLEGE</li>
+                              <li>4th Semester[CSE] </li>
+                              <li>C Section </li>
+                              <li>CPMA PROJECT</li>
+                               </ul>
+                          </div>
+                        </div>
+                        <hr>
+                      </div>
+                      <div class="container" >
+                        <div class="row">
+                          <div class="col-md-8 col-sm-6 col-xs-12">
+                            <p class="copyright-text">Copyright &copy; 2021 All Rights Reserved by 
+                         <a href="index.html">Tour App</a>.
+                         
+                            </p>
+                          </div>
+                      </div>
+                      </div>
+                </footer>
+                    <script src="js/jquery.min.js"></script>
+                    <script src="js/bootstrap.bundle.min.js" integrity="sha384-gtEjrD/SeCtmISkJkNUaaKMoLD0//ElJ19smozuHV6z3Iehds+3Ulb9Bn9Plx0x4" crossorigin="anonymous"></script>
+
+
+	
+                    <script src="cordova.js"></script>
+                    <script src="js/index.js"></script>
+                </body>
+            </html>
+                                            
+                                                
+                        
+                            
+                        
+                    
+          
+         
+           
+  
+       
+          
+        
+          
+       
+ 
